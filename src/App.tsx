@@ -17,8 +17,8 @@ function App() {
         <Grid xs={12}>
           <Item>Navbar</Item>
         </Grid>
-        <Hidden mdDown>
-          <Grid xs={3} lg={6}>
+        <Hidden lgDown>
+          <Grid lg={6}>
             <Item>Aside</Item>
           </Grid>
         </Hidden>
