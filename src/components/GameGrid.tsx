@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import apiClient from "../services/api-client";
 
 interface Game {
@@ -17,7 +17,7 @@ const GameGrid = () => {
 
   useEffect(() => {
     apiClient
-      .get<FetchGamesResponse>("/games")
+      .get<FetchGamesResponse>("/sgames")
       .then((games) => setGames(games.data.results))
       .catch((err) => {
         console.log(err.message);
@@ -25,11 +25,14 @@ const GameGrid = () => {
   });
 
   return (
-    <ul>
-      {games.map((game) => (
-        <li key={game.id}>{game.name}</li>
-      ))}
-    </ul>
+    <>
+      {error && <div>{error}</div>}
+      <ul>
+        {games.map((game) => (
+          <li key={game.id}>{game.name}</li>
+        ))}
+      </ul>
+    </>
   );
 };
 
