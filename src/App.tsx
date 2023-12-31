@@ -1,5 +1,5 @@
 import "./App.css";
-import { Hidden, Paper, styled } from "@mui/material";
+import { Hidden, styled } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 import NavBar from "./components/NavBar";
 
