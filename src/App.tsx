@@ -2,6 +2,7 @@ import "./App.css";
 import { Hidden, styled } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 import NavBar from "./components/NavBar";
+import GameGrid from "./components/GameGrid";
 
 function App() {
   const Item = styled("div")(({ theme }) => ({
@@ -27,7 +28,9 @@ function App() {
           </Grid>
         </Hidden>
         <Grid xs>
-          <Item>Content</Item>
+          <Item>
+            <GameGrid />
+          </Item>
         </Grid>
       </Grid>
     </>
