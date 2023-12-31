@@ -1,21 +1,25 @@
 import "./App.css";
-import { Button, Hidden, Paper, styled } from "@mui/material";
+import { Hidden, Paper, styled } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
+import NavBar from "./components/NavBar";
 
 function App() {
   const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
     ...theme.typography.body2,
     padding: theme.spacing(1),
-    textAlign: "center",
+    alignItems: "center",
     color: theme.palette.text.secondary,
+    paddingLeft: theme.spacing(3),
   }));
 
   return (
     <>
       <Grid container spacing={2}>
         <Grid xs={12}>
-          <Item>Navbar</Item>
+          <Item>
+            <NavBar />
+          </Item>
         </Grid>
         <Hidden lgDown>
           <Grid lg={6}>
