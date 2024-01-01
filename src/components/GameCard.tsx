@@ -14,7 +14,12 @@ const GameCard = ({ game }: Props) => {
   return (
     <Card sx={{ maxWidth: 345, borderRadius: 2, overflow: "hidden" }}>
       <CardMedia
-        sx={{ height: 140 }}
+        sx={{
+          aspectRatio: "16/9",
+          "& img": {
+            objectFit: "contain",
+          },
+        }}
         image={game.background_image}
         title={game.name}
       />
