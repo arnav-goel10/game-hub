@@ -12,19 +12,15 @@ interface Props {
 
 const GameCard = ({ game }: Props) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, borderRadius: 2, overflow: "hidden" }}>
       <CardMedia
         sx={{ height: 140 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
-        title="green iguana"
+        image={game.background_image}
+        title={game.name}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          {game.name}
         </Typography>
       </CardContent>
       <CardActions>

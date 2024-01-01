@@ -1,15 +1,19 @@
+import { Grid } from "@mui/material";
 import useGames from "../hooks/useGames";
+import GameCard from "./GameCard";
 
 const GameGrid = () => {
   const { games, error } = useGames();
   return (
     <>
       {error && <div>{error}</div>}
-      <ul>
+      <Grid container spacing={2}>
         {games.map((game) => (
-          <li key={game.id}>{game.name}</li>
+          <Grid item xs={4}>
+            <GameCard key={game.id} game={game} />
+          </Grid>
         ))}
-      </ul>
+      </Grid>
     </>
   );
 };

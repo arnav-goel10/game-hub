@@ -23,7 +23,7 @@ function App() {
           </Item>
         </Grid>
         <Hidden lgDown>
-          <Grid lg={6} marginLeft={"1.5rem"}>
+          <Grid lg={3} marginLeft={"1.5rem"}>
             <Item>Aside</Item>
           </Grid>
         </Hidden>
