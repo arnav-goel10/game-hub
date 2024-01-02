@@ -29,7 +29,7 @@ const PlatformIconList = ({ platforms }: Props) => {
         <Icon
           key={platform.slug as string}
           component={platformIcons[platform.slug]}
-          sx={{ marginRight: 1 }}
+          sx={{ marginRight: 1, color: "grey.700" }}
         />
       ))}
     </>
