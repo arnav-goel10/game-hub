@@ -12,7 +12,7 @@ interface Props {
 
 const GameCard = ({ game }: Props) => {
   return (
-    <Card sx={{ maxWidth: 400, borderRadius: 2, overflow: "hidden" }}>
+    <Card sx={{ borderRadius: 2, overflow: "hidden", margin: 0 }}>
       <CardMedia
         sx={{
           aspectRatio: "16/9",
