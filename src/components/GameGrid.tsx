@@ -9,7 +9,7 @@ const GameGrid = () => {
       {error && <div>{error}</div>}
       <Grid container spacing={2}>
         {games.map((game) => (
-          <Grid item xs={4}>
+          <Grid item key={game.id} xs={12} md={6} lg={4}>
             <GameCard key={game.id} game={game} />
           </Grid>
         ))}
