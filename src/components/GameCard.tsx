@@ -25,7 +25,12 @@ const GameCard = ({ game }: Props) => {
         title={game.name}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography
+          gutterBottom
+          variant="h5"
+          component="div"
+          sx={{ marginBottom: 2 }}
+        >
           {game.name}
         </Typography>
         <PlatformIconList
