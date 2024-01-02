@@ -1,30 +1,24 @@
 import { Platform } from "../hooks/useGames";
 import { Icon } from "@mui/material";
-import {
-  FaWindows,
-  FaPlaystation,
-  FaXbox,
-  FaApple,
-  FaLinux,
-  FaAndroid,
-} from "react-icons/fa";
+import { FaPlaystation, FaXbox, FaApple, FaLinux } from "react-icons/fa";
 import { BsNintendoSwitch } from "react-icons/bs";
 import { MdPhoneIphone } from "react-icons/md";
 import { BsGlobe } from "react-icons/bs";
 import { IconType } from "react-icons";
-
+import { SiWindows11 } from "react-icons/si";
+import { ImAndroid, ImAppleinc } from "react-icons/im";
 interface Props {
   platforms: Platform[];
 }
 
 const PlatformIconList = ({ platforms }: Props) => {
   const platformIcons: { [key: string]: IconType } = {
-    pc: FaWindows,
+    pc: SiWindows11,
     playstation: FaPlaystation,
     xbox: FaXbox,
-    mac: FaApple,
+    mac: ImAppleinc,
     linux: FaLinux,
-    android: FaAndroid,
+    android: ImAndroid,
     ios: MdPhoneIphone,
     web: BsGlobe,
     nintendo: BsNintendoSwitch,
