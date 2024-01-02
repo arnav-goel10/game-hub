@@ -1,6 +1,6 @@
 import { Platform } from "../hooks/useGames";
 import { Icon } from "@mui/material";
-import { FaPlaystation, FaXbox, FaApple, FaLinux } from "react-icons/fa";
+import { FaPlaystation, FaXbox, FaLinux } from "react-icons/fa";
 import { BsNintendoSwitch } from "react-icons/bs";
 import { MdPhoneIphone } from "react-icons/md";
 import { BsGlobe } from "react-icons/bs";
