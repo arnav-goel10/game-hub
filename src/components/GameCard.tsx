@@ -27,6 +27,9 @@ const GameCard = ({ game }: Props) => {
         <Typography gutterBottom variant="h5" component="div">
           {game.name}
         </Typography>
+        {game.parent_platforms.map(({ platform }) => (
+          <Typography>{platform.name}</Typography>
+        ))}
       </CardContent>
       <CardActions>
         <Button size="small">Share</Button>
