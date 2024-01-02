@@ -1,5 +1,5 @@
 import { Platform } from "../hooks/useGames";
-import { Icon, SvgIcon, Typography } from "@mui/material";
+import { Icon } from "@mui/material";
 import {
   FaWindows,
   FaPlaystation,
