@@ -1,5 +1,4 @@
-import { Badge } from "@mui/material";
-import React from "react";
+import { Box } from "@mui/material";
 
 interface Props {
   score: number;
@@ -7,18 +6,19 @@ interface Props {
 
 const CriticScore = ({ score }: Props) => {
   return (
-    <Badge
+    <Box
       sx={{
-        backgroundColor: "green",
+        backgroundColor: "#04bd35",
         color: "white",
-        padding: "0.25rem 0.5rem",
-        borderRadius: 1,
-        textShadow: "1px 1px 1px rgba(0,0,0,0.5)",
+        borderRadius: 0.5,
         fontWeight: "bold",
+        display: "inline-block",
+        paddingX: 0.7,
+        paddingY: 0.5,
       }}
     >
       {score}
-    </Badge>
+    </Box>
   );
 };
 

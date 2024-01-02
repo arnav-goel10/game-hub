@@ -31,11 +31,21 @@ const GameCard = ({ game }: Props) => {
           gutterBottom
           variant="h5"
           component="div"
-          sx={{ marginBottom: 2 }}
+          sx={{
+            marginBottom: 2,
+            fontSize: "1.75rem",
+            fontWeight: "bold",
+          }}
         >
           {game.name}
         </Typography>
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            fontSize: "1rem",
+          }}
+        >
           <Box>
             <PlatformIconList
               platforms={game.parent_platforms.map((p) => p.platform)}

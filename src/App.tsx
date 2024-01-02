@@ -6,11 +6,11 @@ import GameGrid from "./components/GameGrid";
 
 function App() {
   const Item = styled("div")(({ theme }) => ({
-    backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+    backgroundColor: theme.palette.mode === "dark" ? "black" : "#fff",
     ...theme.typography.body2,
     padding: theme.spacing(1),
     alignItems: "center",
-    color: theme.palette.text.secondary,
+    color: theme.palette.mode === "dark" ? "black" : "#fff",
     paddingLeft: theme.spacing(3),
   }));
 
