@@ -9,7 +9,7 @@ const GameGrid = () => {
   return (
     <>
       {error && <div>{error}</div>}
-      <Grid container spacing={1.5}>
+      <Grid container spacing={2}>
         {isLoading &&
           skeletons.map((skeleton) => <GameCardSkeleton key={skeleton} />)}
         {games.map((game) => (
