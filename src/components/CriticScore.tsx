@@ -8,7 +8,7 @@ const CriticScore = ({ score }: Props) => {
   return (
     <Box
       sx={{
-        backgroundColor: "#04bd35",
+        backgroundColor: score >= 75 ? "green" : score >= 60 ? "yellow" : "red",
         color: "white",
         borderRadius: 0.5,
         fontWeight: "bold",
