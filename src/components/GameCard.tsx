@@ -8,6 +8,7 @@ import Typography from "@mui/material/Typography";
 import PlatformIconList from "./PlatformIconList";
 import CriticScore from "./CriticScore";
 import { Box } from "@mui/material";
+import getCroppedUrl from "../services/image-url";
 
 interface Props {
   game: Game;
@@ -23,7 +24,7 @@ const GameCard = ({ game }: Props) => {
             objectFit: "contain",
           },
         }}
-        image={game.background_image}
+        image={getCroppedUrl(game.background_image, 600, 400)}
         title={game.name}
       />
       <CardContent>
