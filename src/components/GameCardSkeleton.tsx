@@ -2,11 +2,10 @@ import { Card, CardContent, CardMedia, Skeleton } from "@mui/material";
 
 const GameCardSkeleton = () => {
   return (
-    <Card sx={{ width: "300px", borderRadius: 2, margin: 2 }}>
+    <Card sx={{ width: "350px", borderRadius: 2, margin: 1.5 }}>
       <Skeleton variant="rounded" height={"200px"} />
       <CardContent>
-        <Skeleton variant="text" />
-        <Skeleton variant="text" />
+        <Skeleton variant="text" height={"50px"} />
         <Skeleton variant="text" />
       </CardContent>
     </Card>
