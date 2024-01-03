@@ -1,4 +1,4 @@
-import { Card, CardContent, CardMedia, Skeleton } from "@mui/material";
+import { Card, CardContent, Skeleton } from "@mui/material";
 
 const GameCardSkeleton = () => {
   return (
